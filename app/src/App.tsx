@@ -1,13 +1,15 @@
-import './App.css'
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-900">
-      <h1 className="text-4xl font-bold text-sky-400">
-        Tailwind v4 + Vite working 🚀
-      </h1>
-    </div>
-  )
+    <>
+      <Navbar />
+      <main className="pt-16">
+        <Hero />
+      </main>
+    </>
+  );
 }
 
-export default App
+export default App;
