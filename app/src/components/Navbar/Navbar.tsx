@@ -1,4 +1,4 @@
-import { FileText, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const Navbar = () => {
   return (
