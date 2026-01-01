@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Navbar />
       <main className="pt-16">
         <Hero />
+        <Experience />
       </main>
     </>
   );
