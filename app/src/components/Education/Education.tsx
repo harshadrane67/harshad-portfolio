@@ -4,15 +4,11 @@ import EducationItem from "./EducationItem";
 const Education = () => {
   return (
     <section id="education" className="relative">
-      
       {/* Sticky Section Header */}
-      <SectionHeader
-        title="Education"
-      />
+      <SectionHeader title="Education" />
 
       {/* Education Content */}
       <div className="max-w-6xl mx-auto px-4 py-12 space-y-12">
-        
         <EducationItem
           degree="Bachelor Of Engineering"
           major="Computer Engineering"
@@ -28,7 +24,6 @@ const Education = () => {
           score="88.56"
           scoreType="%"
         />
-
       </div>
     </section>
   );

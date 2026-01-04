@@ -17,7 +17,6 @@ const EducationItem = ({
 
   return (
     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-      
       {/* Score */}
       <div className="order-1 md:order-2 flex flex-col items-center md:items-end min-w-[120px]">
         <div className="flex items-baseline font-bold text-slate-100">
@@ -32,17 +31,11 @@ const EducationItem = ({
 
       {/* Details */}
       <div className="order-2 md:order-1 text-center md:text-left max-w-full md:max-w-[70%]">
-        <h3 className="font-bold text-xl text-slate-100">
-          {degree}
-        </h3>
+        <h3 className="font-bold text-xl text-slate-100">{degree}</h3>
 
-        <p className="italic font-light mt-1 text-slate-400">
-          {major}
-        </p>
+        <p className="italic font-light mt-1 text-slate-400">{major}</p>
 
-        <p className="italic font-medium mt-1 text-slate-300">
-          {university}
-        </p>
+        <p className="italic font-medium mt-1 text-slate-300">{university}</p>
       </div>
     </div>
   );

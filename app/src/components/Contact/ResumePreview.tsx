@@ -7,10 +7,7 @@ const RESUME_VIEW_URL =
 const ResumePreview = () => {
   return (
     <div className="space-y-4">
-      
-      <h3 className="text-xl font-semibold">
-        Resume
-      </h3>
+      <h3 className="text-xl font-semibold">Resume</h3>
 
       <div className="relative aspect-[3/4] rounded-xl overflow-hidden border">
         <iframe

@@ -7,10 +7,8 @@ const SectionHeader = ({ title }: SectionHeaderProps) => {
     <div
       className="
         sticky top-16 z-40
-
         bg-slate-900/80
         backdrop-blur
-
         border-b border-white/10
       "
     >

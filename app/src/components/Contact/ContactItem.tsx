@@ -23,19 +23,13 @@ const ContactItem = ({ icon, label, value, href }: ContactItemProps) => {
       "
     >
       {/* Icon */}
-      <div className="text-xl text-slate-400">
-        {icon}
-      </div>
+      <div className="text-xl text-slate-400">{icon}</div>
 
       {/* Text */}
       <div>
-        <p className="text-sm text-slate-400">
-          {label}
-        </p>
+        <p className="text-sm text-slate-400">{label}</p>
 
-        <p className="font-medium text-slate-100">
-          {value}
-        </p>
+        <p className="font-medium text-slate-100">{value}</p>
       </div>
     </a>
   );

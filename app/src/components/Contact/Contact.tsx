@@ -6,23 +6,17 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 const Contact = () => {
   return (
     <section id="contact" className="relative">
-
       {/* Sticky Header */}
-      <SectionHeader
-        title="Contact & Resume"
-      />
+      <SectionHeader title="Contact & Resume" />
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-4 py-12 grid gap-12 md:grid-cols-2">
-
         {/* Left - Resume */}
         <ResumePreview />
 
         {/* Right - Contact Info */}
         <div className="space-y-6">
-          <h3 className="text-xl font-semibold">
-            Contact Information
-          </h3>
+          <h3 className="text-xl font-semibold">Contact Information</h3>
 
           <ContactItem
             icon={<MapPin />}
@@ -45,7 +39,6 @@ const Contact = () => {
             href="tel:+918928757614"
           />
         </div>
-
       </div>
     </section>
   );

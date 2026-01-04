@@ -20,7 +20,7 @@ const Experience = () => {
             "Developed an AI Summary feature for the Check-in app that automatically generates meeting summaries in native languages with tone and timeframe options, enabling faster insight review for managers.",
             "Built reusable React micro-frontend components for cross-product usage post-acquisition, ensuring interoperability and UI consistency.",
             "Optimized SQL queries and the Capability Model EPIC, improving performance and maintainability across both legacy (ASPX) and React-based modules.",
-            "Collaborated with cross-border teams on code reviews, sprint planning, and releases to ensure timely delivery of all assigned epics."
+            "Collaborated with cross-border teams on code reviews, sprint planning, and releases to ensure timely delivery of all assigned epics.",
           ]}
         />
 
@@ -34,7 +34,7 @@ const Experience = () => {
             "Engineered an Angular Office Add-in and integrated an AI chatbot plugin architecture in collaboration with a cross-border Romanian development team.",
             "Redesigned Cypress automation in TypeScript, increasing CI pipeline pass rate from 36% to 91% and reducing test execution time by 84%.",
             "Developed xUnit test suites for 10+ microservices, achieving approximately 100% line coverage and 91% branch coverage through robust unit testing strategies.",
-            "Led Agile sprints, coordinated Azure CI/CD releases, and resolved post-release issues through detailed root cause analysis (RCA), ensuring stable production delivery."
+            "Led Agile sprints, coordinated Azure CI/CD releases, and resolved post-release issues through detailed root cause analysis (RCA), ensuring stable production delivery.",
           ]}
         />
       </div>

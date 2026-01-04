@@ -21,7 +21,6 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur border-b border-slate-700">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-
         {/* Left – Memoji */}
         <div className="flex items-center gap-3">
           <div className="w-18 h-18 relative">

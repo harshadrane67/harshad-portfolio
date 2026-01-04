@@ -15,7 +15,6 @@ export default function ExperienceItem({
 }: ExperienceItemProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[35%_1fr] gap-8 items-start">
-
       {/* IMAGE */}
       <div className="w-full max-w-[420px] mx-auto md:mx-0">
         <div
@@ -51,7 +50,6 @@ export default function ExperienceItem({
           ))}
         </ul>
       </div>
-
     </div>
   );
 }

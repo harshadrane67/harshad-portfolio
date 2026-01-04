@@ -4,15 +4,11 @@ import SkillCategory from "./SkillCategory";
 const Skills = () => {
   return (
     <section id="skills" className="relative">
-      
       {/* Sticky Header */}
-      <SectionHeader
-        title="Skills"
-      />
+      <SectionHeader title="Skills" />
 
       {/* Skills Content */}
       <div className="max-w-6xl mx-auto px-4 py-12 grid gap-12 md:grid-cols-2">
-        
         <SkillCategory
           title="Backend"
           skills={[
@@ -22,7 +18,7 @@ const Skills = () => {
             "REST API",
             "Entity Framework",
             "LINQ",
-            "Microservices"
+            "Microservices",
           ]}
         />
 
@@ -34,18 +30,13 @@ const Skills = () => {
             "JavaScript",
             "HTML",
             "CSS",
-            "Tailwind CSS"
+            "Tailwind CSS",
           ]}
         />
 
         <SkillCategory
           title="Databases"
-          skills={[
-            "SQL Server",
-            "MySQL",
-            "PostgreSQL",
-            "MongoDB",
-          ]}
+          skills={["SQL Server", "MySQL", "PostgreSQL", "MongoDB"]}
         />
 
         <SkillCategory
@@ -58,10 +49,9 @@ const Skills = () => {
             "GitHub",
             "CI/CD",
             "Jenkins",
-            "Postman"
+            "Postman",
           ]}
         />
-
       </div>
     </section>
   );
