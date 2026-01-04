@@ -19,7 +19,7 @@ const Skills = () => {
             "C#",
             ".NET",
             "ASP.NET Core",
-            "Web API",
+            "REST API",
             "Entity Framework",
             "LINQ",
             "Microservices"
@@ -42,9 +42,9 @@ const Skills = () => {
           title="Databases"
           skills={[
             "SQL Server",
+            "MySQL",
             "PostgreSQL",
             "MongoDB",
-            "Redis"
           ]}
         />
 
@@ -57,6 +57,7 @@ const Skills = () => {
             "Git",
             "GitHub",
             "CI/CD",
+            "Jenkins",
             "Postman"
           ]}
         />

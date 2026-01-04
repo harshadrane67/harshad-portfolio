@@ -15,12 +15,17 @@ export default function ExperienceItem({
 }: ExperienceItemProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[35%_1fr] gap-8 items-start">
-      
+
       {/* IMAGE */}
       <div className="w-full max-w-[420px] mx-auto md:mx-0">
         <div
-          className="aspect-[7/6] rounded-2xl overflow-hidden border border-gray-200 shadow-md
-                     transition-transform duration-300 ease-out hover:scale-[1.03]"
+          className="
+            aspect-[7/6] rounded-2xl overflow-hidden
+            border border-slate-700
+            shadow-lg shadow-black/20
+            transition-transform duration-300 ease-out
+            hover:scale-[1.03]
+          "
         >
           <img
             src={image}
@@ -32,13 +37,15 @@ export default function ExperienceItem({
 
       {/* CONTENT */}
       <div>
-        <h3 className="font-bold text-gray-900 text-2xl md:text-[2.5rem] leading-tight">{company}</h3>
+        <h3 className="font-bold text-slate-100 text-2xl md:text-[2.5rem] leading-tight">
+          {company}
+        </h3>
 
-        <p className="text-sm text-gray-600 mt-1">
+        <p className="text-sm text-slate-400 mt-1">
           {role} · {duration}
         </p>
 
-        <ul className="mt-4 space-y-2 text-gray-700 leading-relaxed list-disc list-inside">
+        <ul className="mt-4 space-y-3 text-slate-300 leading-relaxed list-disc list-inside">
           {description.map((point, index) => (
             <li key={index}>{point}</li>
           ))}

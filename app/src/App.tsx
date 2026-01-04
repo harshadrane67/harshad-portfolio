@@ -8,7 +8,8 @@ import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <>
-      <Navbar />
+    <div className="min-h-screen bg-slate-900 text-slate-100">
+     <Navbar />
       <main className="pt-16">
         <Hero />
         <Experience />
@@ -16,6 +17,8 @@ function App() {
         <Skills />
         < Contact/>
       </main>
+    </div>
+     
     </>
   );
 }

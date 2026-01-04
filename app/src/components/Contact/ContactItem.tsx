@@ -16,15 +16,26 @@ const ContactItem = ({ icon, label, value, href }: ContactItemProps) => {
       className="
         flex items-start gap-4
         p-4 rounded-lg
-        hover:bg-gray-100
-        transition
+
+        bg-slate-900
+        hover:bg-slate-800
+        transition-colors
       "
     >
-      <div className="text-xl">{icon}</div>
+      {/* Icon */}
+      <div className="text-xl text-slate-400">
+        {icon}
+      </div>
 
+      {/* Text */}
       <div>
-        <p className="text-sm text-gray-500">{label}</p>
-        <p className="font-medium">{value}</p>
+        <p className="text-sm text-slate-400">
+          {label}
+        </p>
+
+        <p className="font-medium text-slate-100">
+          {value}
+        </p>
       </div>
     </a>
   );
