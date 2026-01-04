@@ -1,12 +1,15 @@
 import ExperienceItem, { type ExperienceData } from "./ExperienceItem";
 import Timeline from "./Timeline";
 import SectionHeader from "../SectionHeader/SectionHeader";
+import cornerstoneLogo from "/cornerstone-white-png2.png";
+import gepLogo from "/gep-white.png"
+
 
 const experiences: ExperienceData[] = [
   {
     title: "Software Engineer",
     company: "Cornerstone OnDemand",
-    logo: "/public/cornerstone-white-png2.png",
+    logo: cornerstoneLogo,
     aboutCompany:
       "Cornerstone OnDemand is a leading product-based company specializing in AI-powered LMS and HR software. Its flagship platform, Cornerstone Galaxy, empowers 125 million users across 180 countries to build future-ready workforces.",
     myTeamRole: [
@@ -26,7 +29,7 @@ const experiences: ExperienceData[] = [
   {
     title: "Software Engineer",
     company: "GEP Worldwide",
-    logo: "/public/gep-white.png",
+    logo: gepLogo,
     aboutCompany:
       "GEP provides AI-powered procurement and supply chain solutions.",
     myTeamRole: [
@@ -46,7 +49,7 @@ const experiences: ExperienceData[] = [
   {
     title: "Associate Software Engineer",
     company: "GEP Worldwide",
-    logo: "/gep.png",
+    logo: gepLogo,
     aboutCompany:
       "GEP provides AI-powered procurement and supply chain solutions.",
     myTeamRole: [

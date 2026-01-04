@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import ResumePreview from "./ResumePreview";
 import ContactItem from "./ContactItem";
 import SectionHeader from "../SectionHeader/SectionHeader";
@@ -30,6 +30,20 @@ const Contact = () => {
             label="Email"
             value="harshadrane67@gmail.com"
             href="mailto:harshadrane67@gmail.com"
+          />
+
+          <ContactItem
+            icon={<Linkedin />}
+            label="LinkedIn"
+            value="linkedin.com/in/rane-harshad/"
+            href="https://www.linkedin.com/in/rane-harshad/"
+          />
+
+          <ContactItem
+            icon={<Github />}
+            label="GitHub"
+            value="github.com/harshadrane67"
+            href="https://github.com/harshadrane67"
           />
 
           <ContactItem
