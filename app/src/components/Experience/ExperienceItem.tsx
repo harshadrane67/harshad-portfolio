@@ -1,55 +1,62 @@
-interface ExperienceItemProps {
+export interface ExperienceData {
+  title: string;
   company: string;
-  role: string;
-  duration: string;
-  description: string[];
-  image: string;
+  logo?: string;
+  aboutCompany: string;
+  myTeamRole: string[];
+  accomplishments: string[];
+  isLogoVisible: boolean;
+  startDate: string;
+  endDate: string;
 }
 
-export default function ExperienceItem({
-  company,
-  role,
-  duration,
-  description,
-  image,
-}: ExperienceItemProps) {
+export default function ExperienceItem({ data }: { data: ExperienceData }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[35%_1fr] gap-8 items-start">
-      {/* IMAGE */}
-      <div className="w-full max-w-[420px] mx-auto md:mx-0">
-        <div
-          className="
-            aspect-[7/6] rounded-2xl overflow-hidden
-            border border-slate-700
-            shadow-lg shadow-black/20
-            transition-transform duration-300 ease-out
-            hover:scale-[1.03]
-          "
-        >
-          <img
-            src={image}
-            alt={`${company} team`}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
+    <article className="relative scroll-mt-32">
+      {/* Logo */}
+      {data.isLogoVisible && data.logo && (
+        <img
+          src={data.logo}
+          alt={data.company}
+          className="w-auto h-10 mb-6 rounded-xl"
+        />
+      )}
 
-      {/* CONTENT */}
-      <div>
-        <h3 className="font-bold text-slate-100 text-2xl md:text-[2.5rem] leading-tight">
-          {company}
-        </h3>
+      {/* Title */}
+      <h3 className="text-xl font-semibold text-blue-400">{data.title}</h3>
 
-        <p className="text-sm text-slate-400 mt-1">
-          {role} · {duration}
+      <p className="text-slate-400 mt-1">{data.company}</p>
+      <p className="text-slate-400 mt-1">
+        {data.startDate} – {data.endDate}
+      </p>
+
+      {/* About */}
+      <section className="mt-8">
+        <h4 className="text-slate-200 font-medium mb-2">About Company</h4>
+        <p className="text-slate-400 leading-relaxed whitespace-pre-line">
+          {data.aboutCompany}
         </p>
+      </section>
 
-        <ul className="mt-4 space-y-3 text-slate-300 leading-relaxed list-disc list-inside">
-          {description.map((point, index) => (
-            <li key={index}>{point}</li>
+      {/* Role */}
+      <section className="mt-6">
+        <h4 className="text-slate-200 font-medium mb-2">My Team & Role</h4>
+        <ul className="list-disc list-inside space-y-2 text-slate-400">
+          {data.myTeamRole.map((item, i) => (
+            <li key={i}>{item}</li>
           ))}
         </ul>
-      </div>
-    </div>
+      </section>
+
+      {/* Accomplishments */}
+      <section className="mt-6">
+        <h4 className="text-slate-200 font-medium mb-3">Accomplishments</h4>
+        <ul className="list-disc list-inside space-y-2 text-slate-400">
+          {data.accomplishments.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+      </section>
+    </article>
   );
 }
